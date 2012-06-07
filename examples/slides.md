@@ -1,4 +1,4 @@
---- fill
+!SLIDE fill
 
 
 
@@ -15,7 +15,7 @@
 
 ![slides](http://goo.gl/EpXln)
 
----
+!SLIDE
 
 ### Overview ###
 
@@ -23,38 +23,38 @@ The objective of `slidify` is to make it easy to create reproducible HTML5 prese
 
 The guiding philosophy of `slidify` is to completely separate writing of content from its rendering, so that content can be written once in `R Markdown`, and rendered as an `HTML5` presentation using any of the `HTML5` slide frameworks supported.
 
----
+!SLIDE
 
 # Motivation #
 
----
+!SLIDE
 
 # Several HTML5 slide frameworks exist... #
 
---- fill
+!SLIDE fill
 
 ### deck.js ###
 
 
 ![deck.js](assets/media/deck.js.png)
 
---- fill
+!SLIDE fill
 
 ### slidy ###
 
 ![slidy](assets/media/slidy.png)
 
---- fill
+!SLIDE fill
 
 ### html5slides ###
 
 ![slidy](assets/media/html5slides.png)
 
----
+!SLIDE
 
 ### ... but it is a pain to write HTML ###
 
----
+!SLIDE
 
 
 
@@ -75,25 +75,23 @@ In addition to `slidify`, you would also need to install development versions of
 </pre></div></div></div>
 
  
----
+!SLIDE
 
     
 ### Motivation ###
 
 
----
+!SLIDE build
 
 ### Usage ###
 
 `slidify` is designed to make it very easy for a HTML novice to generate a crisp, visually appealing `HTML5` slide deck. You can do it in just three steps!
 
-..ul: build
-
 * Write your source file in [R Markdown](http://goo.gl/KKdaf)
 * Separate your slides using a horizontal rule `---`
 * Run `slidify("slides.Rmd")` to generate your slide deck.
 
----
+!SLIDE
 
 ### Framework ###
 
@@ -113,7 +111,7 @@ Extending `slidify` to accommodate other frameworks is pretty straightforward. T
 [4]: http://pepelsbey.github.com/shower/en.htm
 [5]: http://www.w3.org/Talks/Tools/Slidy2/Overview.html#(1)
 
----
+!SLIDE
 
 ### Theme ###
 
@@ -125,7 +123,7 @@ The `theme` option lets you style your slides. Currently, this option is availab
 
 Themes are just `css` files. So it is easy to extend this option to the other frameworks if you can write css. 
 
----
+!SLIDE
 
 ### Transition ###
 
@@ -138,7 +136,7 @@ The `transition` option allows you to define the transition between slides. Curr
 Please consult [deck.js](http://goo.gl/UFthM) documentation for more information on `themes` and `transitions`
 
 
----
+!SLIDE
 
 ### Highlighter ###
 
@@ -155,7 +153,7 @@ You will notice that the quality of highlighting for `R` code is better when don
 [5]: http://softwaremaniacs.org/soft/highlight/en/
 [6]: http://goo.gl/uy8Ww
 
----
+!SLIDE
 
 ### Highlight Style ###
 
@@ -167,7 +165,7 @@ You will notice that the quality of highlighting for `R` code is better when don
 
 In order to use the `R` option, you need to include the line `opts_knit$set(out.format = 'html')` inside your `.Rmd` file. This is required to fool `knitr` into highlighting source code. Specifying it outside the document does not work as `knitr` resets it to `md` as soon as it sees the `.Rmd` extension.
 
----
+!SLIDE
 
 ### Math ###
 
@@ -190,7 +188,7 @@ $$latex
 \end{vmatrix}
 $$
 
---- build
+!SLIDE build
 
 ### Animated Lists ###
 
@@ -206,7 +204,7 @@ It produces the slide
 * Point 2
 * Point 3
     
----
+!SLIDE
 
 ### Issues ###
 
@@ -216,7 +214,7 @@ As a result, a slide deck that looks visually appealing in one framework, may no
 
 The long-term goal of `slidify` is to be able to truly stand by the "write once, style as you like" idea. 
 
---- smaller
+!SLIDE smaller
 
 
 ### License ###
@@ -231,11 +229,11 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
----
+!SLIDE
 
 # References #
 
----
+!SLIDE
 
 ### HTML5 Slides and R ###
 
@@ -246,7 +244,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 4. [Visualize World Bank Data](http://goo.gl/QlTA4)
 5. [Interactive Presentations with deck.js](http://goo.gl/kdhBO)
 
----
+!SLIDE
 
 ### R Markdown and knitr ###
 
@@ -258,7 +256,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 6. [Interactive Slides with R, googleVis and knitR](http://goo.gl/cVS9W)
 7. [knitr, Slideshows and Dropbox](http://goo.gl/ZTSD7)
 
---- smaller nobackground
+!SLIDE smaller nobackground
 
 <div class="chunk"><div class="rcode"><div class="output"><pre class="knitr">$framework
 [1] "html5slides"
