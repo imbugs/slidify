@@ -1,3 +1,5 @@
+相比slidifer而言，slidify是个比较强大的工具，使用R标签(.md文件)进行编写Slides
+
 # Overview #
 
 Slidify makes it easy to create, customize and publish, reproducible HTML5 slide decks from [`R Markdown`](http://goo.gl/KKdaf). 
